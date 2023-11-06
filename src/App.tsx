@@ -1,11 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
+import GetRandom from './components/getRandom/getRandom';
 
 function App() {
   return (
     <div className="App">
       Hello
+      <GetRandom/>
     </div>
   );
 }

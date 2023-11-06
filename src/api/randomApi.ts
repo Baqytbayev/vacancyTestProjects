@@ -4,7 +4,6 @@ class RandomApi {
     getRandom = async () => {
         try{
             const response = await instances.get('?results=10')
-            console.log( response.data)
             return response.data
         }catch(e) {
             console.log(e)
