@@ -60,11 +60,11 @@ const RegistrationForm: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className='mainDiv'>
       <h2 className='checkLogin'>{registration ? 'Регестрация' : 'Вход в аккаунт'}</h2>
-      {error && <h2 style={{ color: 'red' }}>{error}</h2>}
+      {error && <p className="errorStyle">{error}</p>}
       <div>
-        <input
+        <input className='inputStyle'
           type="text"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
@@ -72,7 +72,7 @@ const RegistrationForm: React.FC = () => {
         />
       </div>
       <div>
-        <input
+        <input className='inputStyle'
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
@@ -81,7 +81,7 @@ const RegistrationForm: React.FC = () => {
       </div>
       {registration && (
         <div>
-          <input
+          <input className='inputStyle'
             type="password"
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
@@ -89,23 +89,23 @@ const RegistrationForm: React.FC = () => {
           />
         </div>
       )}
-      <button onClick={registration ? handleRegistration : handleLogin}>
+      <button className='buttonRegistrationStyle' onClick={registration ? handleRegistration : handleLogin}>
         {registration ? 'Зарегистрироваться' : 'Войти'}
       </button>
-      <div>
-        <span>
+      <div className='divOfFinish'>
+        <span className='haveLogin'>
           {registration ? 'Имеете аккаунт?' : 'Не имеете аккаунт?'}{' '}
-          <button onClick={toggleRegistration}>
+          <button className='buttonEnter' onClick={toggleRegistration} >
             {registration ? 'Войти' : 'Зарегистрироваться'}
           </button>
         </span>
       </div>
       {logged && (
-        <div>
-          <h2 style={{ color: 'green' }}>
+        <div >
+          <h2 className='loggedStyle'>
             Вы успешно {registration ? 'зарегистрировались' : 'авторизовались'}.
           </h2>
-          <a><Link to={'/search'} >Перейти к просмотру</Link> Перейти на YouTube</a>
+          <button className='buttonEnter'><Link to={'/search'} >Перейти к просмотру</Link></button>
           
         </div>
       )}

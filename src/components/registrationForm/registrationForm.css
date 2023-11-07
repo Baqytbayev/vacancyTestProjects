@@ -6,4 +6,118 @@
     font-style: normal;
     font-weight: 500;
     line-height: 100%;
+    margin: 0;
     }
+.mainDiv{
+    margin-top: 316px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+    flex-shrink: 0;
+    width: 533px;
+    height: 448px;
+    background-color: #191919;
+    padding: 53px 49px;
+    border-radius: 20px;
+    }
+    .inputStyle{
+        background-color: #191919;
+        width: 426px;
+        display: flex;
+    padding: 22px 109px 5px 0px;
+    align-items: center;
+    align-self: stretch;
+  border: none;
+  border-bottom: 1px solid #E3E3E3; 
+  outline: none; 
+  position: relative;
+
+  color: #FFF;
+
+font-family: 'Inter Tight', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 135%; /* 21.6px */
+letter-spacing: -0.16px;
+    }
+.inputStyle::after{
+    content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+}
+.buttonRegistrationStyle{
+display: flex;
+width: 533px;
+padding: 16px 36px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+flex: 1 0 0;
+border-radius: 12px;
+background: #FFF;
+color: #000;
+
+font-family: 'Inter Tight', sans-serif;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: 100%;
+
+}
+.divOfFinish{
+    width: 533px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.haveLogin{
+    color: rgba(255, 255, 255, 0.57);
+
+font-family: 'Inter Tight', sans-serif;
+font-size: 13px;
+font-style: normal;
+font-weight: 500;
+line-height: 100%; 
+}
+.buttonEnter{
+    background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font-size: inherit;
+  color: white; 
+  text-decoration: none;
+  text-decoration: none; 
+  outline: none; 
+font-family: 'Inter Tight', sans-serif;
+font-size: 13px;
+font-style: normal;
+font-weight: 500;
+line-height: 100%;
+}
+.errorStyle{
+    font-family: 'Inter Tight', sans-serif;
+font-size: 13px;
+font-style: normal;
+color: red;
+font-weight: 500;
+line-height: 100%;
+margin: 0;
+}
+.loggedStyle{
+    font-family: 'Inter Tight', sans-serif;
+font-size: 13px;
+font-style: normal;
+color: green;
+font-weight: 500;
+line-height: 100%;
+margin: 0;
+}
