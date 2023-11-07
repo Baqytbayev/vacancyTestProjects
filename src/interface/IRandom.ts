@@ -77,9 +77,20 @@ export default interface IRandom {
     nat: string;
 
   }
+  type InfoProps =  {
+    image: string,
+    gender: string,
+    text: string
+}
   export interface IRandomState {
     random: {
-     results: IRandom[]; 
+     results: InfoProps; 
    };
    loading: boolean;
  }
+ 
+ export default interface IProductsState {
+     products: IRandom[]
+     loadingProducts: boolean
+ }
+ 

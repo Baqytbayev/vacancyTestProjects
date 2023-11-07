@@ -16,7 +16,7 @@ export const sliceRandom = createSlice({
         random: [] as IRandom[],
         loadingRandom: false,
         messageRandom: ''
-    } ,
+    },
 
  
     reducers: {},
@@ -30,7 +30,7 @@ export const sliceRandom = createSlice({
     })
     .addCase(getRandom.fulfilled, (state, action) => {
         state.loadingRandom = false
-        state.random = action.payload.results as IRandom[] || []
+        state.random = action.payload.results
         state.messageRandom = action.payload.message
     })
 
