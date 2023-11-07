@@ -3,6 +3,7 @@
 
 import React, { useState } from 'react';
 import './registrationForm.css';
+import { Link } from 'react-router-dom';
 
 
 const RegistrationForm: React.FC = () => {
@@ -104,7 +105,8 @@ const RegistrationForm: React.FC = () => {
           <h2 style={{ color: 'green' }}>
             Вы успешно {registration ? 'зарегистрировались' : 'авторизовались'}.
           </h2>
-          <a href="https://www.youtube.com">Перейти на YouTube</a>
+          <a><Link to={'/search'} >Перейти к просмотру</Link> Перейти на YouTube</a>
+          
         </div>
       )}
     </div>
