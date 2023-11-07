@@ -24,9 +24,10 @@ const GetRandom = () => {
             {random.length ? 
                 random.map(p => {
                     return <GetOneRandom 
-                        // key={p.id}
+                        key={p.id.value}
                         item={p}
                     />
+                    
                 })
             : <h1>No products</h1>}
 
